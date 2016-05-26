@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="30 seconds">
+    <appender name="file" class="ch.qos.logback.core.FileAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+        <File>/tmp/logs/springboot-shiro-lightadmin.log</File>
+    </appender>
+    <logger name="com.predatum" level="info"/>
+    <logger name="org.springframework" level="warn"/>
+    <logger name="org.hibernate" level="info"/>
+    <root level="warn">
+        <appender-ref ref="file"/>
+    </root>
+</configuration>
