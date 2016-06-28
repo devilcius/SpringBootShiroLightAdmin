@@ -38,4 +38,5 @@ overridedb.*
 .factorypath
 dump.rdb
 /nbproject
+nb-configuration.xml
 

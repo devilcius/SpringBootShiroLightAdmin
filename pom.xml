@@ -10,23 +10,20 @@
 
     <groupId>com.predatum.sbsla</groupId>
     <artifactId>springboot-shiro-lightadmin</artifactId>
-    <version>1.0</version>
-    <packaging>war</packaging>
+    <version>1.1</version>
+    <packaging>jar</packaging>
     <name>SpringBootShiroLightAdmin</name>
     <description>Demo springboot application with shiro and ligthadmin</description>
-
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <lightadmin.version>1.2.0.RC1</lightadmin.version>
     </properties>
-
     <dependencies>    
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-jasper</artifactId>
-            <!--  Please change scope to "provided" for deploying as a web module to servlet container  -->
-            <scope>compile</scope>
+            <scope>provided</scope>
         </dependency>        
         <dependency>
             <groupId>org.apache.shiro</groupId>
@@ -62,10 +59,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
